@@ -1,0 +1,12 @@
+<h1>Books#show</h1>
+<p>Find me in app/views/books/show.html.erb</p>
+<ul>
+  <li><%= image_tag @book.image_url %></li>
+  <li><%= @book.isbn %></li>
+  <li><%= @book.title %></li>
+  <li><%= @book.author %></li>
+  <li><%= @book.item_price %></li>
+  <li><%= link_to "商品リンク", @book.item_url %></li>
+</ul>
+
+<%= link_to "戻る", root_path %>
